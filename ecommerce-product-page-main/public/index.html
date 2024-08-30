@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | E-commerce product page</title>
+  <script defer type="module" src="./src/index.js"></script>
+  <script defer type="module" src="./src/nav.js"></script>
+  <script defer type="module" src="./src/cart-shopping.js"></script>
+</head>
+<body>
+  <main class="main">
+    <div class="overlay-effect"></div>
+    <header class="header container">
+      <nav class="nav">
+        <div class="nav-logos">
+          <button class="nav-hamburger" id="hamburger-btn">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </button>
+          
+          <div class="nav__logo--sneakers">
+            <img src="../images/logo.svg" alt="sneakers-logo" class="nav-logo">
+          </div>
+        </div>
+
+        <div class="nav-menu">
+          <button class="close-menu">
+            <img src="../images/icon-close.svg" alt="close" class="icon-close">
+          </button>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#" class="nav__link">Collections</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav__link">Men</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav__link">Women</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav__link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="nav-icons">
+          <div class="nav-alert"></div>
+          <button class="nav-button cart-btn">
+            <div class="numberOfItems"></div>
+            <img src="../images/icon-cart.svg" alt="cart" class="nav-icon">
+          </button>
+          <button class="nav-button avatarBtn">
+            <img src="../images/image-avatar.png" alt="avatar" class="nav-icon">
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="section container">
+
+      <div class="cart-section">
+        <div class="cart-content disabled">
+          <p class="cart-title">Cart</p>
+        </div>
+      </div>
+
+      <div class="slide">
+        <button class="arrow prev"></button>
+
+        <div class="full-image">
+          <img src="../images/image-product-1.jpg" alt="product1" class="imageProduct" id="imageFull">
+        </div>
+
+        <div class="row-thumb disabled">
+          <button class="image-btn-thumb">
+            <img src="../images/image-product-1-thumbnail.jpg" alt="product1" class="imageProduct-thumb">
+          </button>
+          <button class="image-btn-thumb">
+            <img src="../images/image-product-2-thumbnail.jpg" alt="product2" class="imageProduct-thumb">
+          </button>
+          <button class="image-btn-thumb">
+            <img src="../images/image-product-3-thumbnail.jpg" alt="product3" class="imageProduct-thumb">
+          </button>
+          <button class="image-btn-thumb">
+            <img src="../images/image-product-4-thumbnail.jpg" alt="product4" class="imageProduct-thumb">
+          </button>
+        </div>
+
+        <button class="arrow next"></button>
+      </div>
+
+      <div class="company-info">
+        <article class="company-text">
+          <p class="company-name">Sneaker Company</p>
+          <h1 class="company-title">Fall Limited Edition Sneakers</h1>
+          <p class="company-paragraph">
+            These low-profile sneakers are your perfect casual wear companion. Featuring a
+            durable rubber outer sole, they’ll withstand everything the weather can offer.
+          </p>
+
+          <div class="company-prices">
+            <div class="row">
+              <span class="company-price">$125.00</span>
+              <span class="company__price--desc">50%</span>
+            </div>
+            <span class="company-price-total">$250.00</span>
+          </div>
+        </article>
+
+        <div class="company-content">
+          <div class="company-countdown">
+            <button class="company-operation minus"></button>
+            <div class="company-number-amount amount">0</div>
+            <button class="company-operation plus"></button>
+          </div>
+
+          <div class="company-addToCart">
+            <button class="addToCart">
+              <div class="addToCart-icon"></div>
+              <div class="addToCart-text">Add to cart</div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="overlay"></div>
+  </main>
+  <div class="light-box-overlay container disabled"></div>
+</body>
+</html>
